@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <section class="imp-zone">
+            <span class="operation"></span>
+            <span class="result"></span>
+        </section>
+        <section class="button-zone">
+            <button class="clear button oc-2" onclick="display.clear()">C</button>
+            <button class="delete button oc-2" onclick="display.borrar()"><-</button>
+            <button class="seven button numero">7</button>
+            <button class="eight button numero">8</button>
+            <button class="nine button numero">9</button>
+            <button class="plus button operation-button" value="suma">+</button>
+            
+            <button class="four button numero">4</button>
+            <button class="five button numero">5</button>
+            <button class="six button numero">6</button>
+            <button class="minus button operation-button" value="resta">-</button>
+
+            <button class="one button numero">1</button>
+            <button class="two button numero">2</button>
+            <button class="three button numero">3</button>
+            <button class="multiply button operation-button" value="multiplicacion">*</button>
+
+            <button class="equals button" value="igual" onclick="display.calcular()">=</button>
+            <button class="cero button numero">0</button>
+            <button class="coma button numero">,</button>
+            <button class="button button operation-button" value="division">/</button>
+        </section>
+    </section>
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/ce11f24c0f.js" crossorigin="anonymous"></script>
+</body>
+</html>
