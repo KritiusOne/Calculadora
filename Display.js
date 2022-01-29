@@ -31,7 +31,7 @@ class Display{
         this.imp();
     }
     aggNumeros(numero){
-        if(numero === ',' && this.valorActual.includes(',')) return
+        if(numero === '.' && this.valorActual.includes('.')) return
         this.valorActual = this.valorActual.toString() + numero.toString();
         this.imp();
     }
